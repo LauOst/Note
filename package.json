@@ -33,6 +33,7 @@
     "@types/path-browserify": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
@@ -50,6 +51,8 @@
     "unplugin-auto-import": "^0.15.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.0",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
     "vue-tsc": "^1.0.24"
   },
   "config": {

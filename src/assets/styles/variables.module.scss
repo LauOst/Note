@@ -1,0 +1,32 @@
+// base color
+$blue: #324157;
+$light-blue: #3A71A8;
+$red: #C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow: #FEC171;
+$panGreen: #30B08F;
+
+// sidebar
+$menuText: #bfcbd9;
+$menuActiveText: #409EFF;
+$subMenuActiveText: #f4f4f5;
+
+$menuBg: #2c343f;
+$menuHover: rgba(0, 0, 0, 0.15);
+
+$subMenuBg: rgba(0, 0, 0, 0.15);
+$subMenuHover: rgba(0, 0, 0, 0.25);
+
+$sideBarWidth: 230px;
+
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+}
