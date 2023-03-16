@@ -23,3 +23,8 @@ export const getAuthRouterListApi = () => {
 export const logoutApi = () => {
   return http.post(`/logout`)
 }
+
+export const ceshiApi = () => {
+  // return http.get<Menu.MenuOptions[]>(`/api/user/auth/getRouters`)
+  return http.get<any>(`/users/bar`)
+}

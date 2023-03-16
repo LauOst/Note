@@ -5,8 +5,8 @@
 
 // serve
 export const API_BASE_URL = '/api'
-export const API_TARGET_URL = 'https://mock.mengxuegu.com/mock/640ae1bc4689d550adbe0a40/note'
-// export const API_TARGET_URL = 'https://mock.mengxuegu.com/mock/63bbbff50743af0df9523672/lau'
+// export const API_TARGET_URL = 'https://mock.mengxuegu.com/mock/640ae1bc4689d550adbe0a40/note'
+export const API_TARGET_URL = 'http://localhost:3000/api'
 
 // title
 export const VITE_GLOB_APP_TITLE = 'DZICS-Admin'

@@ -35,6 +35,7 @@ export const UserStore = defineStore({
     // 获取用户信息
     async getInfo() {
       const { data } = await getInfoApi()
+      console.log('data', data)
       const { roles, permissions } = data
       this.roles = roles
       this.permissions = permissions

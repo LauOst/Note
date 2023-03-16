@@ -33,7 +33,8 @@ class RequestHttp {
     this.service.interceptors.request.use(
       (config: InternalAxiosRequestConfig) => {
         const token = getToken()
-        if (config.headers && typeof config.headers?.set === 'function') config.headers.set('x-access-token', token)
+        if (config.headers && typeof config.headers?.set === 'function')
+          config.headers.Authorization = `Bearer ${token}`
         return config
       },
       (error: AxiosError) => {
@@ -53,7 +54,7 @@ class RequestHttp {
         }
 
         // * 登陆失效（code == 402 | 408）
-        if (code === ResultEnum.OVERDUE || code === 408) {
+        if (code === ResultEnum.OVERDUE || code === 50001) {
           ElMessageBox.confirm('登录状态已过期，您可以继续留在该页面，或者重新登录', '系统提示', {
             confirmButtonText: '重新登录',
             cancelButtonText: '取消',

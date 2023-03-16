@@ -4,14 +4,34 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['./.eslintrc-auto-import.json', 'plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended'],
-  overrides: [],
+  globals: {
+    defineEmits: true,
+    document: true,
+    localStorage: true,
+    GLOBAL_VAR: true,
+    window: true,
+    defineProps: true,
+    defineExpose: true,
+  },
+  extends: [
+    './.eslintrc-auto-import.json',
+    'airbnb-base',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended', // 添加 prettier 插件
+  ],
+  /* 指定如何解析语法 */
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
     sourceType: 'module',
+    jsxPragma: 'React',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
-  plugins: ['vue', '@typescript-eslint'],
+  plugins: ['vue', '@typescript-eslint', 'import'],
   rules: {
     // eslint (http://eslint.cn/docs/rules)
     'no-var': 'error', // 要求使用 let 或 const 而不是 var
